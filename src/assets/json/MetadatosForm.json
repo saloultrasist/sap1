@@ -1,0 +1,32 @@
+ {
+    "id": 5,
+    "RFC": 149,
+    "nombre": "Identificación oficial Acreditado",
+    "businessPartner": "00000000045",
+    "campos":[
+        {
+            "titulo": "Calificación de perspectiva crediticia",
+            "valor": 3
+        },
+        {
+            "titulo": "Evidencia de otras calificaciones",
+            "valor": 1
+        },
+        {
+            "titulo": "Fecha de vigencia",
+            "valor": 2
+        },
+        {
+            "titulo": "Breve descripción",
+            "valor": 0
+        },
+        {
+            "titulo": "Obligaciones de hacer",
+            "valor": 1
+        },
+        {
+            "titulo": "Obligaciones de no hacer",
+            "valor": 1
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "id": 245,
+    "RFC": 148,
+    "nombre": "lista de documentos disponibles",
+    "businessPartner": "00000000045",
+    "tipoDeDocs":[
+        "",
+        "Comprobante de domicilio acreditado",
+        "Comprobante de domicilio aval y/o obligado solidario",
+        "Cédula de identificación fiscal acreditado",
+        "Cédula de identificación fiscal aval y/o obligado solidario",
+        "Identificación oficial Acreditado",
+        "Identificación oficial aval y/o obligado solidario",
+        "Cédula de identificación del cliente",
+        "Cédula de conocimiento del cliente",
+        "Cédula de actualización de datos",
+        "Autorización para investigación buró de crédito solicitante",
+        "Autorización para investigación buró de crédito aval y/o obligado solidario",
+        "Escrituras constitutivas inscritas en el RPP (Organismos)",
+        "Información financiera (Organismos)",
+        "Evolución de finanzas (Estados y Municipios)",
+        "Saldos de la Deuda (Estados y Municipios)",
+        "Estados financieros dictaminados (Organismos PRI)(3 últimos ejercicios PUB)",
+        "Ley de ingresos",
+        "Presupuestos de egresos año actual y anterior",
+        "Personalidad jurídica (Organismos)",
+        "Ley o decreto de creación (Organismos)",
+        "Nombramiento de los funcionarios estatales o municipales solicitantes",
+        "Calificación crediticia del solicitante",
+        "Calificación crediticia del aval",
+        "Solicitud de crédito"
+    ]
+}

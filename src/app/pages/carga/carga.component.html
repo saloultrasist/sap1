@@ -1,0 +1,50 @@
+<nav class="navbar navbar-light abajo">
+    <div class="container-fluid">
+      <p class="navbar-brand" >Carga de Nuevo Documento KM</p>
+      <a type="button" class="btn-close btn btn-danger" aria-label="Close" href="https://bansap.pysea.ml/"></a>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="col-md-2">
+     <p class="text-start archivo">Tipo de Documento:</p>
+    </div>
+    <div class="col-8 ms-3">
+        <select name="tipo" id="none" size="1" class="form-select" NgModel=seleC>
+            <option *ngFor="let d of documentos" on:click="showMetaF(index)">
+              {{ d }}   
+            </option>
+        </select>
+    </div>
+     <form>
+    <div class="form-group col-6 top">
+      <label for="exampleFormControlFile1">Archivo: </label>
+      <input type="file" class="form-control-file top2" id="exampleFormControlFile1">
+    </div>
+  </form>
+  <div class="col-10 mx-auto top">
+    <h5 class="mar">Metadatos de DocumentoIdentificacion Oficial Acreditado</h5>
+      <table class="table table-bordered border-white top1">
+          <thead>
+              <tr>
+              <th scope="col" class="th"><p class="text-start">Descripcion de Metadatos  </p></th>
+              <th scope="col" class="th">valor</th>
+              </tr>
+          </thead>
+          <tbody class="tabla" *ngFor="let c of carga">
+            <tr>
+              <td class="text-start">{{ c.titulo }}</td>
+              <td *ngIf="c.valor == 1" class="w-valor"><input type="checkbox" class="form-check-input"></td>
+              <td ngif else="c.valor == 2" class="w-valor"><input type="date" class="form-control text-center"></td>
+              <td ngif else="c.valor == 3" class="d-flex justify-content-center"><input type="text" class="form-control w-50 text-center" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"></td>
+              <td ngelse class="w-valor"><input type="text" class="form-control"></td>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+   </div>
+   <div>
+    <div class="text-end">
+        <a class="btn btn-yellow-custom my-4 mx-3 boton">Guardar</a>
+        <a class="btn btn-yellow-custom my-4 me-4 boton" href="https://bansap.pysea.ml/" v-on:click="cierra">Salir</a>
+    </div>
+  </div>
